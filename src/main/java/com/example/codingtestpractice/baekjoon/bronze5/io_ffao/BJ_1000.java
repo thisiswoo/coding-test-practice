@@ -1,4 +1,4 @@
-package com.example.codingtestpractice.baekjoon.bronze5;
+package com.example.codingtestpractice.baekjoon.bronze5.io_ffao;
 
 import java.util.Scanner;
 
