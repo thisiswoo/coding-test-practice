@@ -13,10 +13,26 @@ public class BJ_10869 {
 
         long a = sc.nextLong(), b = sc.nextLong();
 
-        System.out.println(a + b);
-        System.out.println(a - b);
-        System.out.println(a * b);
-        System.out.println(a / b);
-        System.out.println(a % b);
+//        System.out.println(a + b);
+//        System.out.println(a - b);
+//        System.out.println(a * b);
+//        System.out.println(a / b);
+//        System.out.println(a % b);
+
+        System.out.println(plus(a, b));
+        System.out.println(minus(a, b));
+        System.out.println(multiply(a, b));
+        System.out.println(divide(a, b));
+        System.out.println(remainder(a, b));
     }
+
+    static long plus(long a, long b) { return a + b; }
+
+    static long minus(long a, long b) { return a - b; }
+
+    static long multiply(long a, long b) { return a * b; }
+
+    static long divide(long a, long b) { return a / b; }
+
+    static long remainder(long a, long b) { return a % b; }
 }
