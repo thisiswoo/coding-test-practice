@@ -33,7 +33,7 @@ public class BOJ_2752 {
     }
 
     // 숫자 세 개를 넣어줄 배열 생성 및 입력받은 수 3개를 배열에 저장
-    private static int[] readInput(StringTokenizer st) {
+    public static int[] readInput(StringTokenizer st) {
         int[] arr = new int[3]; // 입력 받을 정수 3개의 배열을 만들어 주기
         for (int i = 0; i < 3; i++) {
             arr[i] = Integer.parseInt(st.nextToken());  // 배열에 입력 받은 정수 값 담기
@@ -42,7 +42,7 @@ public class BOJ_2752 {
     }
 
     // 오름차순으로 정렬
-    private static void sortAscending(int[] arr) {
+    public static void sortAscending(int[] arr) {
         Arrays.sort(arr);   // 올림차순 asc (입력 : 3 1 2 ==> 출력 : 1 2 3)
     }
 
@@ -52,7 +52,7 @@ public class BOJ_2752 {
     }
 
     // 내림차순(desc)으로 정렬하기
-    private static int[] reverseArray(int[] arr) {
+    public static int[] reverseArray(int[] arr) {
         Arrays.sort(arr);
         int[] reversedArr = new int[arr.length];
         for (int i = arr.length - 1; i >= 0; i--) {
