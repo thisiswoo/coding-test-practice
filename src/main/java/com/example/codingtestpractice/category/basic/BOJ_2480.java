@@ -27,7 +27,7 @@ public class BOJ_2480 {
     }
 
     // 3개의 주사위 값 배열에 담기
-    private static int[] readInputDice(final StringTokenizer st) {
+    public static int[] readInputDice(final StringTokenizer st) {
         int[] arr = new int[3];
         for (int i = 0; i < 3; i++) {
             arr[i] = Integer.parseInt(st.nextToken());
@@ -36,7 +36,7 @@ public class BOJ_2480 {
     }
 
     // 3개의 주사위 값을 조건부에 맞게 계산하기
-    private static int prizeCalculation(final int[] dice) {
+    public static int prizeCalculation(final int[] dice) {
         if (dice[0] == dice[1] && dice[1] == dice[2]) {
             return 10000 + (dice[0] * 1000); // 3개의 주사위가 모두 같을 때 계산
         } else if (dice[0] == dice[1] || dice[0] == dice[2] || dice[1] == dice[2]) {
@@ -47,7 +47,7 @@ public class BOJ_2480 {
     }
 
     // 제일 높은 값으로 계산
-    private static int getMaxOfArray(int[] arr) {
+    public static int getMaxOfArray(int[] arr) {
         Arrays.sort(arr); // 오름차순으로 정렬
 
         // 오름차순 정렬된 배열에서 마지막 요소(-1)는 가장 큰 값이기 때문에 arr[arr.length - 1]을 반환합니다.
@@ -56,12 +56,12 @@ public class BOJ_2480 {
     }
 
     // 출력
-    private static void printPrize(int prize) {
+    public static void printPrize(int prize) {
         System.out.println(prize);
     }
 
     // 2개의 주사위가 같을 때 같은 값으로 계산
-    private static int calculateSameDicePrize(int[] dice) {
+    public static int calculateSameDicePrize(int[] dice) {
         int sameDice = dice[0] == dice[1] ? dice[0] : dice[1];
         return 1000 + (sameDice * 100);
     }
