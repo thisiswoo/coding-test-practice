@@ -28,7 +28,7 @@ public class BOJ_10871 {
         // 정수 N개로 이루어진 수열 A중 정수 X보다 작은것만 출력
         for (int i = 0; i < N; i++) {
             if (A[i] < X) {
-                System.out.println(A[i] + " ");
+                System.out.print(A[i] + " ");
             }
         }
     }
